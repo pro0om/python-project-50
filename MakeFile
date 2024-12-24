@@ -1,0 +1,19 @@
+install:
+	uv sync
+
+build:
+	uv build
+
+run:
+	uv run gen
+
+test:
+	uv run pytest
+
+test-coverage:
+	uv run pytest --cov=genediff --cov-report xml
+
+lint:
+	uv run ruff check
+
+check: test lint

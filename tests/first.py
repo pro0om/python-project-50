@@ -1,8 +1,8 @@
-import unittest
+from gendiff.first import first
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
 
-if __name__ == '__main__':
-    unittest.main()
+def test_first():
+    assert first(6) == 3
+
+
+
