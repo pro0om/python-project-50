@@ -1,0 +1,7 @@
+[project]
+name = "python-project-50"
+version = "0.1.0"
+description = "Pavel Hartsu phartsuk@gmail.com"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
