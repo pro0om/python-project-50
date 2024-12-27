@@ -5,7 +5,7 @@ build:
 	uv build
 
 run:
-	uv run gen
+	uv run gendiff
 
 test:
 	uv run pytest
