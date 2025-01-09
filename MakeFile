@@ -11,7 +11,7 @@ diff:
 diff_json:
 	uv run gendiff tests/test_files/file3.json tests/test_files/file4.json -f json
 diff_yml:
-	uv run gendiff tests/test_files/file1.yml tests/test_files/file2.yml
+	uv run gendiff tests/test_files/file3.yml tests/test_files/file4.yml
 
 test:
 	uv run pytest
