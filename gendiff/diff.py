@@ -4,6 +4,7 @@ def common_and_different(dict1, dict2):
     added = dict2.keys() - dict1.keys()
     return common, removed, added
 
+
 def for_add(key, value):
     return {
         'action': 'added',

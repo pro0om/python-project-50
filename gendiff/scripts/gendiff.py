@@ -8,6 +8,5 @@ def main():
     print(diff)
 
 
-
 if __name__ == "__main__":
     main()
