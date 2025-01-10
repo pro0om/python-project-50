@@ -8,3 +8,4 @@ coverage.xml
 *_cache/
 .python-version
 .idea/
+venv
