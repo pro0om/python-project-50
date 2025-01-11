@@ -1,6 +1,6 @@
 def to_str(value):
     if isinstance(value, (list, dict)):
-        return '[dict]'
+        return '[complex value]'
     elif isinstance(value, bool):
         return str(value).lower()
     elif isinstance(value, int):
