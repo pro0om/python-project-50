@@ -4,7 +4,7 @@ def to_str(value):
     elif isinstance(value, bool):
         return str(value).lower()
     elif isinstance(value, int):
-        return value
+        return f"{value}"
     elif value is None:
         return 'null'
     else:
