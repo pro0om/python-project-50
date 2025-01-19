@@ -10,6 +10,7 @@ def to_str(value):
     else:
         return str(value)
 
+
 def make_plain_result_item(item, path=''):
     current_key = item.get('name')
     current_path = f"{path}.{current_key}" if path else current_key
@@ -20,7 +21,8 @@ def make_plain_result_item(item, path=''):
     if action == 'added':
         if path == '':
             return f"Property {current_path} was added"
-        return f"Property in {path} was added {current_key} with value: {new_value}"
+        return (f"Property in {path} was added {current_key} "
+                f"with value: {new_value}")
     elif action == 'deleted':
         if path == '':
             return f"Property {current_path} was removed"

@@ -8,7 +8,7 @@ def json_value(data):
         else:
             return data
     for key, value in data.items():
-        v = json_value(value)
+        value = json_value(value)
         data[key] = value
     return data
 
