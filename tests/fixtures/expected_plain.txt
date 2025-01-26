@@ -1,11 +1,11 @@
 Property in common was added follow with value: false
 Property in common was removed setting2
-Property in common.setting3 was updated setting3: from true to  null
+Property in common.setting3 was updated setting3: from true to null
 Property in common was added setting4 with value: blah blah
-Property in common.setting5 was removed bob
-Property in common.setting6.doge.wow was updated wow: from  to  so much
+Property in common was added setting5 with value: [complex value]
+Property in common.setting6.doge.wow was updated wow: from  to so much
 Property in common.setting6 was added ops with value: vops
-Property in group1.baz was updated baz: from bas to  bars
-Property in group1.nest was updated nest: from [complex value] to  str
+Property in group1.baz was updated baz: from bas to bars
+Property in group1.nest was updated nest: from [complex value] to str
 Property group2 was removed
-Property group3 was added
+Property group3 was added with value: [complex value]
