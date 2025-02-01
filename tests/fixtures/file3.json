@@ -3,10 +3,6 @@
     "setting1": "Value 1",
     "setting2": 200,
     "setting3": true,
-    "setting5": {
-      "key5": "value5",
-      "bob": "Karlos"
-    },
     "setting6": {
       "key": "value",
       "doge": {
