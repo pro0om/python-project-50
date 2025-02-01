@@ -24,12 +24,12 @@ def test_to_str(input_value, expected_value):
 
 @pytest.fixture
 def input_diff():
-    return get_input_data('exp1_given_diff.json')
+    return get_input_data('expected_diff.json')
 
 
 @pytest.fixture
 def expected_result():
-    return get_expected_result('exp1_plain.txt')
+    return get_expected_result('expected_plain.txt')
 
 def test_format_diff_plain(input_diff, expected_result):
     assert format_diff_plain(input_diff) == expected_result

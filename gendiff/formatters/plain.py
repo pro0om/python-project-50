@@ -20,17 +20,18 @@ def make_plain_result_item(item, path=''):
 
     if action == 'added':
         if path == '':
-            return f"Property {current_path} was added"
+            return (f"Property {current_path} was added "
+                    f"with value: {new_value}")
         return (f"Property in {path} was added {current_key} "
                 f"with value: {new_value}")
     elif action == 'deleted':
         if path == '':
             return f"Property {current_path} was removed"
-        return f"Property in {path} was removed {current_key} "
+        return f"Property in {path} was removed {current_key}"
     elif action == 'modified':
         return (
             f"Property in {current_path} was updated {current_key}: "
-            f"from {old_value} to  {new_value}"
+            f"from {old_value} to {new_value}"
         )
     elif action == 'nested':
         children = item.get('children')
