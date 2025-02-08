@@ -20,7 +20,7 @@ test:
 	uv run pytest
 
 test-coverage:
-	uv run pytest --cov=genediff --cov-report xml
+	uv run pytest --cov=gendiff tests/ --cov-report xml
 
 lint:
 	uv run ruff check

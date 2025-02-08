@@ -1,6 +1,8 @@
 import pytest
+
 from gendiff.formatters.json import format_diff_json
-from tests.test_utility import get_input_data, get_expected_result
+from tests.test_utility import get_expected_result, get_input_data
+
 
 @pytest.fixture
 def input_diff():
@@ -10,6 +12,7 @@ def input_diff():
 @pytest.fixture
 def expected_result():
     return get_expected_result('expected_json.txt')
+
 
 def test_format_diff_json(input_diff, expected_result):
     assert format_diff_json(input_diff) == expected_result

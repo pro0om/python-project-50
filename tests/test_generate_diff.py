@@ -1,5 +1,7 @@
-import pytest
 import os
+
+import pytest
+
 from gendiff.generate_diff import generate_diff
 from tests.test_utility import get_expected_result
 

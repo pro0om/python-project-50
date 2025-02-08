@@ -1,5 +1,5 @@
-import os
 import json
+import os
 
 
 def read_file(file_name):

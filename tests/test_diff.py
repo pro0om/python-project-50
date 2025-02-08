@@ -1,6 +1,12 @@
 import pytest
+
 from gendiff.diff import (
-    diff, for_add, for_delete, for_unchanged, for_changed, for_nested,
+    diff,
+    for_add,
+    for_changed,
+    for_delete,
+    for_nested,
+    for_unchanged,
 )
 
 
