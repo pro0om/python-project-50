@@ -5,11 +5,11 @@ import yaml
 from gendiff.io import get_file_data, get_file_format
 
 
-def parse_data(content, format):
+def parse_data(data, format):
     if format == 'json':
-        return json.loads(content)
+        return json.loads(data)
     if format in ['yml', 'yaml']:
-        return yaml.safe_load(content)
+        return yaml.safe_load(data)
 
 
 def parse_data_from_file(file_path):
