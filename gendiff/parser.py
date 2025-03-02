@@ -8,7 +8,7 @@ from gendiff.io import get_file_data, get_file_format
 def parse_data(data, format):
     if format == 'json':
         return json.loads(data)
-    if format in ['yml', 'yaml']:
+    if format == 'yaml' or format == 'yml':
         return yaml.safe_load(data)
 
 
