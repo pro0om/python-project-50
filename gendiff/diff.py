@@ -52,7 +52,6 @@ def diff(dict1, dict2):
     common, removed, added = common_and_different(dict1, dict2)
     result = []
 
-
     for key in keys:
         value1 = dict1.get(key)
         value2 = dict2.get(key)
