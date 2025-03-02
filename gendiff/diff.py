@@ -47,9 +47,11 @@ def for_nested(key, value1, value2):
 
 
 def diff(dict1, dict2):
+
     keys = dict1.keys() | dict2.keys()
     common, removed, added = common_and_different(dict1, dict2)
     result = []
+
 
     for key in keys:
         value1 = dict1.get(key)
