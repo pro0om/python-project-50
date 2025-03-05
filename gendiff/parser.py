@@ -1,5 +1,7 @@
 import json
+
 import yaml
+
 from gendiff.io import get_file_data, get_file_format
 
 
