@@ -3,8 +3,8 @@ def to_str(value):
         return '[complex value]'
     elif isinstance(value, bool):
         return str(value).lower()
-    elif isinstance(value, int):
-        return f"{value}"
+    elif isinstance(value, str):
+        return f"'{value}'"
     elif value is None:
         return 'null'
     else:
@@ -19,25 +19,19 @@ def make_plain_result_item(item, path=''):
     old_value = to_str(item.get('old_value'))
 
     if action == 'added':
-        if path == '':
-            return (f"Property {current_path} was added "
-                    f"with value: {new_value}")
-        return (f"Property in {path} was added {current_key} "
-                f"with value: {new_value}")
-    elif action == 'deleted':
-        if path == '':
-            return f"Property {current_path} was removed"
-        return f"Property in {path} was removed {current_key}"
-    elif action == 'modified':
+        return f"Property '{current_path}' was added with value: {new_value}"
+    if action == 'deleted':
+        return f"Property '{current_path}' was removed"
+    if action == 'modified':
         return (
-            f"Property in {current_path} was updated {current_key}: "
-            f"from {old_value} to {new_value}"
+            f"Property '{current_path}' was updated. "
+            f"From {old_value} to {new_value}"
         )
-    elif action == 'nested':
+    if action == 'nested':
         children = item.get('children')
         return make_plain_result(children, current_path)
-    else:
-        return None
+    return None
+
 
 
 def make_plain_result(diff, path=''):

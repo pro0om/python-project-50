@@ -5,7 +5,7 @@ from tests.test_utility import get_expected_result, get_input_data
 
 
 @pytest.mark.parametrize('input_value, expected_value', [
-    ("hello", 'hello'),
+    ("hello", "'hello'"),
     (12, "12"),
     (1.23, "1.23"),
     (True, "true"),
