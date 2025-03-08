@@ -33,7 +33,6 @@ def make_plain_result_item(item, path=''):
     return None
 
 
-
 def make_plain_result(diff, path=''):
     result = []
     for item in diff:
